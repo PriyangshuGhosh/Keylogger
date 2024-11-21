@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit and View Strings</title>
+</head>
+<body>
+    <h1>Submit Your String</h1>
+
+    <!-- Form to submit string -->
+    <form id="submitForm">
+        <input type="text" id="userString" placeholder="Enter a string" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Submitted Strings</h2>
+    <div id="displayStrings">
+        <!-- Display strings here -->
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+
+    <!-- Firebase Configuration -->
+    <script src="firebase-config.js"></script>
+    <!-- Your Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
